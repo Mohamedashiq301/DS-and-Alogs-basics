@@ -3,7 +3,7 @@ package ds.stack;
 public class App {
 
 	public static void main(String[] args) {
-		Stack thestack=new Stack(10);
+		Stack thestack=new Stack(4);
 		
 		thestack.push(20);
 		thestack.push(40);
