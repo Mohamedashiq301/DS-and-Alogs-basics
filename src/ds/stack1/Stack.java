@@ -6,7 +6,7 @@ public class Stack {
 	private char[] stackArray;
 	private int top;
 	
-	private Stack(int size) {
+	Stack(int size) {
 		this.maxSize=size;
 		this.stackArray=new char[maxSize];
 		this.top=-1;
@@ -23,7 +23,7 @@ public class Stack {
 		return stackArray[old_top];
 	}
 	
-	public long peak() {
+	public char peak() {
 		return stackArray[top];
 	}
 	
