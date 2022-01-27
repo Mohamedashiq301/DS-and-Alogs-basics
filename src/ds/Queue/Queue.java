@@ -20,7 +20,7 @@ public class Queue {
 	public void insert(long j) {
 		
 		if(rear==maxSize-1) {
-			front=0;
+			rear=-1;
 		}
 		
 		rear++;
