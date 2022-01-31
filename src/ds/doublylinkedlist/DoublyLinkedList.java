@@ -24,6 +24,7 @@ public class DoublyLinkedList {
 		}else {
 			first.previous=newNode;
 		}
+		
 		newNode.next=first;
 		this.first=newNode;
 	}
@@ -38,7 +39,16 @@ public class DoublyLinkedList {
 			last.next=newNode;
 			newNode.previous=last;
 		}
-		last=newNode;
+	}
+	
+	public Node deleteFirst() {
+		Node temp=first;
 		
+		if(first.next==null) {
+			last=null;
+		}else {
+			first.next.previous=null;
+		}
+		return temp;
 	}
 }
