@@ -8,6 +8,12 @@ public class AddingATwoSortedArray {
 		int sr3[]=new int[sr1.length+sr2.length];
 		
 		
-		
+		for(int i=1;i<sr1.length;i++) {
+			for(int j=0;j<sr2.length;j++) {
+				if(sr1[i]<=sr2[i]) {
+					sr3=
+				}
+			}
+		}
 	}
 }
